@@ -3,9 +3,8 @@ import { Article } from "./components/Article";
 import { Page } from "./components/Page";
 import { Hero } from "./components/Hero";
 import { Grid } from "./components/Grid";
-import { Card } from "./components/Card";
 import { RecommendedArticles } from "./components/RecommendedArticles";
-// import { Card } from "@repo/ui/card";
+import { CardComponent } from "@repo/ui/card";
 
 export const getStoryblokApi = storyblokInit({
   accessToken: process.env.NEXT_PUBLIC_STORYBLOK_TOKEN,
@@ -15,7 +14,7 @@ export const getStoryblokApi = storyblokInit({
     page: Page,
     hero: Hero,
     grid: Grid,
-    card: Card,
+    card: CardComponent,
     recommended_articles: RecommendedArticles,
   },
   enableFallbackComponent: true,

@@ -12,7 +12,6 @@ const fetchHomePage = async () => {
         : "published",
     resolve_relations: "recommended_articles.articles",
   });
-  console.log(response)
   return response.data.story;
 };
 
